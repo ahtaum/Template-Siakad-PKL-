@@ -66,15 +66,23 @@
 
 </nav>
 
-<div class="row" id="body-row">
+<div class="row " id="body-row">
     <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
 
-        <ul class="list-group">
+        <ul class="list-group" role="tablist">
+
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
                 <small>MAIN MENU</small>
             </li>
 
-            <a href="#sub" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="#profil" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-dashboard fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Informasi Pengguna</span>
+                </div>
+            </a>
+
+            <a href="#home" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Halaman Utama</span>
@@ -172,16 +180,28 @@
     </div>
 <!-- akhir Sidebar -->
 
-<!-- MAIN Konten -->
-<div class="col">
-	<div class="card">
-	  <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
-	  <div class="card-body">
-	    <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
-	  </div>
-	</div>
+<!-- Halaman Utama -->
+    <div class="col-9">
+
+        <div class="card" id="home">
+          <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
+          <div class="card-body">
+            <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
+          </div>
+        </div>
+        <!-- </div> -->
+
+    <div class="col-9">
+        <div class="card" id="profil" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
     </div>
-</div>
+
+<!-- </div> -->
+
 
 <!-- Boostrap javasript -->
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
