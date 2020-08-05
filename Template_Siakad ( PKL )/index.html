@@ -33,12 +33,12 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
 
-      <li class="nav-item dropdown d-sm-block d-md-none">
+      <li class="nav-item dropdown d-sm-block d-md-none nav nav-pills" role="tablist">
         <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
         <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
-            <a class="dropdown-item" href="#">Halaman Depan</a>
+            <a class="dropdown-item" href="#home" data-toggle="pill">Halaman Depan</a>
+            <a class="dropdown-item" href="#profil" data-toggle="pill">Profil</a>
             <a class="dropdown-item" href="#">Panduan</a>
-            <a class="dropdown-item" href="#">Profil</a>
             <a class="dropdown-item" href="#">Info MataKuliah Ditawarkan</a>
             <a class="dropdown-item" href="#">Kartu Rencana Studi</a>
             <a class="dropdown-item" href="#">Kartu Hasil Studi</a>
@@ -67,24 +67,25 @@
 </nav>
 
 <div class="row" id="body-row">
+
     <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
         <div class="nav flex-column nav-pills bg-danger" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
-            <a href="#home" id="homeweb" data-toggle="pill" aria-expanded="false" class="nav-link active bg-dark list-group-item list-group-item-action flex-column align-items-start" role="tab">
+            <a href="#home" id="homeweb" data-toggle="pill" aria-expanded="false" class="text-light nav-link active bg-dark list-group-item list-group-item-action flex-column align-items-start" role="tab">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Halaman Utama</span>
                 </div>
             </a>
 
-            <a href="#profil" id="profilweb" data-toggle="pill" aria-expanded="false" class="nav-link bg-dark list-group-item list-group-item-action flex-column align-items-start" role="tab">
+            <a href="#profil" id="profilweb" data-toggle="pill" aria-expanded="false" class="text-light nav-link bg-dark list-group-item list-group-item-action flex-column align-items-start" role="tab">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Informasi Pengguna</span>
                 </div>
             </a>
 
-            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Academics</span>
@@ -121,7 +122,7 @@
                 </a>
             </div>
 
-            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-user fa-fw mr-3"></span>
                     <span class="menu-collapsed">Virtual Class</span>
@@ -152,19 +153,19 @@
                 </a>
             </div>
 
-             <a href="#sub" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+             <a href="#sub" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Disclamer</span>
                 </div>
             </a>
-             <a href="#sub" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+             <a href="#sub" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Faq</span>
                 </div>
             </a>
-            <a href="#sub" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+            <a href="#sub" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Logout</span>
@@ -172,34 +173,101 @@
             </a>
 
         </div>
-
     </div>
 <!-- akhir Sidebar -->
 
 <!-- Halaman Utama -->
-<div class="col-9">
-    <div class="tab-content" id="v-pills-tabContent">
+    <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
 
-        <div class="card tab-pane fade show active" role="tabpanel" id="home">
-          <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
-          <div class="card-body">
-            <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
-          </div>
+            <div class="card tab-pane fade show active" role="tabpanel" id="home" align="justify">
+              <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
+              <div class="card-body">
+                <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
+              </div>
+            </div>
+
+            <div class="card text-center tab-pane fade" id="profil">
+
+                <div class="card-header">
+                    <h5>Profil Mahasiswa</h1>
+                    <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <td>Nim</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Nama</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Alamat</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Agama</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Jenis Kelamin</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Asal SLTA</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Tanggal Terdaftar</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Nama Orang Tua (Ayah / Ibu)</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Alamat Orang Tua</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Warga Negara</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>Status</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                        <tr>
+                          <td>No. Telp/HP</td>
+                          <td>:</td>
+                          <td>xxxxxxx</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                </div>
+                <div class="card-footer text-muted">Profil Mahasiswa berisi data pribadi pengguna portal akademik. Apabila terdapat kesalahan data, anda dapat menghubungi bagian akademik untuk memperbaikinya.</div>
+            </div>
+
         </div>
-    <!-- </div> -->
-
-    <!-- <div class="col-9"> -->
-        <div class="card tab-pane fade" role="tabpanel" id="profil" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
     </div>
-</div>
 
-<!-- </div> -->
+</div>
 
 
 <!-- Boostrap javasript -->

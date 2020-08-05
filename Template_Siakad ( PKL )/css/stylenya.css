@@ -69,9 +69,9 @@ form .img {
 .sidebar-expanded {
     width: 230px;
 }
-.sidebar-collapsed {
+/*.sidebar-collapsed {
     width: 60px;
-}
+}*/
 
 
 #sidebar-container .list-group a {
@@ -101,8 +101,6 @@ form .img {
     background-color: #333;
     height: 60px;
 }
-
-
 /* agar web responsive */
 
 
