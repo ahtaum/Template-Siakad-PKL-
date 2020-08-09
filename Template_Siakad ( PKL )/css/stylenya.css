@@ -51,16 +51,16 @@ form .img {
 	font-weight: lighter;
 }
 
-.card {
+/*.card {
 	margin-top: 30px;
-}
+}*/
 
 #body-row {
     margin-left:0;
     margin-right:0;
 }
 #sidebar-container {
-    min-height: 100vh;
+    min-height: 110vh;
     background-color: #333;
     padding: 0;
 }
@@ -88,8 +88,7 @@ form .img {
     font-size: 0.9rem;
 }
 
-
-.sidebar-separator-title {
+/*.sidebar-separator-title {
     background-color: #333;
     height: 35px;
 }
@@ -100,10 +99,23 @@ form .img {
 .logo-separator {
     background-color: #333;
     height: 60px;
+}*/
+
+footer nav {
+	padding: 10px;
 }
+
+#halamanInformasi,#profil,#home {
+	margin-top: 30px;
+}
+
+/* Halaman Informasi mata kuliah yang ditawarkan */
+.pilihan label button {
+	padding: 2px 9px;
+	margin-bottom: 11px;
+}
+
 /* agar web responsive */
-
-
 /* Halaman Login */
 @media only screen and (max-width: 1024px) {
 
