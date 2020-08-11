@@ -18,7 +18,7 @@
 <body>
 
 <!-- Sidebar nya -->
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -39,24 +39,24 @@
             <a class="dropdown-item" href="#home" data-toggle="pill">Halaman Depan</a>
             <a class="dropdown-item" href="#profil" data-toggle="pill">Informasi Pengguna</a>
             <a class="dropdown-item" href="#halamanInformasi" data-toggle="pill">Info MataKuliah</a>
-            <a class="dropdown-item" href="#">Kartu Rencana Studi</a>
-            <a class="dropdown-item" href="#">Kartu Hasil Studi</a>
-            <a class="dropdown-item" href="#">Transkip Nilai</a>
-            <a class="dropdown-item" href="#">Prensensi</a>
-            <a class="dropdown-item" href="#">Workshop</a>
+            <a class="dropdown-item" href="#halamanRencanaStudi" data-toggle="pill">Kartu Rencana Studi</a>
+            <a class="dropdown-item" href="#halamanHasilStudi" data-toggle="pill">Kartu Hasil Studi</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Transkip Nilai</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Prensensi</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Workshop</a>
         </div>
       </li>
       <li class="nav-item dropdown d-sm-block d-md-none" role="tablist">
         <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Virtual Class</a>
         <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
-            <a class="dropdown-item" href="#lurr" data-toggle="pill">Mata Kuliah</a>
-            <a class="dropdown-item" href="#">Tugas Kuliah</a>
-            <a class="dropdown-item" href="#">Agenda Kelas</a>
-            <a class="dropdown-item" href="#">Agenda Pribadi</a>
-            <a class="dropdown-item" href="#">File Sharing</a>
-            <a class="dropdown-item" href="#">Referensi</a>
-            <a class="dropdown-item" href="#">Panduan</a>
-            <a class="dropdown-item" href="#">Ubah Password</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Mata Kuliah</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Tugas Kuliah</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Agenda Kelas</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Agenda Pribadi</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">File Sharing</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Referensi</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Panduan</a>
+            <a class="dropdown-item" href="#" data-toggle="pill">Ubah Password</a>
         </div>
       </li>
 
@@ -95,11 +95,11 @@
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Info MataKuliah</span>
                 </a>
-                <a href="#lurr" data-toggle="pill" class="list-group-item list-group-item-action bg-dark text-white nav-link">
+                <a href="#halamanRencanaStudi" data-toggle="pill" class="list-group-item list-group-item-action bg-dark text-white nav-link">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Kartu Rencana Studi</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="#halamanHasilStudi" data-toggle="pill" class="list-group-item list-group-item-action bg-dark text-white nav-link">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Kartu Hasil Studi</span>
                 </a>
@@ -167,7 +167,7 @@
     <div class="col-9">
         <div class="tab-content" id="v-pills-tabContent">
 
-            <div class="card tab-pane fade show active" role="tabpanel" id="home" align="justify">
+            <div class="card tab-pane fade show active w-70" role="tabpanel" id="home" align="justify">
               <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
               <div class="card-body">
                 <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
@@ -176,7 +176,7 @@
             </div>
 
 <!-- Halaman Profil -->
-            <div class="card text-center tab-pane fade" id="profil">
+          <div class="card text-center tab-pane fade" id="profil">
 
             <div class="card-header">
                 <h5>Profil Mahasiswa</h1>
@@ -184,7 +184,7 @@
             </div>
 
             <div class="card-body">
-                <table class="table table-striped">
+                <table class="table table-striped table-sm">
                   <tbody>
                     <tr>
                       <td>Nim</td>
@@ -254,76 +254,357 @@
             </div>
 
 <!-- Halaman Informasi mata kuliah yang ditawarkan -->
-            <div id="halamanInformasi" class="tab-pane fade">
+          <div id="halamanInformasi" class="tab-pane fade container">
 
-            <div class="pilihan">
-              <select class="form-control-sm" id="exampleFormControlSelect1">
-                <option>Manajemen Informatika</option>
-                <option>Komputerisasi Akuntasi</option>
-                <option>Teknik Komputer</option>
-                <option>Informatika</option>
-                <option>Manajemen Informatika</option>
-                <option>Sistem Informasi</option>
-                <option>Manajemen Informatika S1 (TI)</option>
-              </select>
-              <label for="contoh"><button type="button" class="btn btn-primary">Lihat</button></label>
-            </div>
+            <h4 class="text-center">Informasi Mata Kuliah</h4>
 
-              <div class="card">
+              <div class="pilihan">
+                <select class="form-control-sm" id="exampleFormControlSelect1">
+                  <option>Manajemen Informatika</option>
+                  <option>Komputerisasi Akuntasi</option>
+                  <option>Teknik Komputer</option>
+                  <option>Informatika</option>
+                  <option>Manajemen Informatika</option>
+                  <option>Sistem Informasi</option>
+                  <option>Manajemen Informatika S1 (TI)</option>
+                </select>
+                <label for="contoh"><button type="button" class="btn btn-primary">Lihat</button></label>
+              </div>
+
+                <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Collapsible Group Item #1
+                      Semester X
                     </button>
                   </h5>
                 </div>
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="card-body table-responsive-lg">
+                    <table class="table table-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">Kode</th>
+                          <th scope="col">Mata Kuliah</th>
+                          <th scope="col">Nama Dosen</th>
+                          <th scope="col">Kelas</th>
+                          <th scope="col">W/P</th>
+                          <th scope="col">SKS</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Collapsible Group Item #2
+                      Semester X
                     </button>
                   </h5>
                 </div>
+
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="card-body table-responsive-lg">
+                    <table class="table table-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">Kode</th>
+                          <th scope="col">Mata Kuliah</th>
+                          <th scope="col">Nama Dosen</th>
+                          <th scope="col">Kelas</th>
+                          <th scope="col">W/P</th>
+                          <th scope="col">SKS</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Collapsible Group Item #3
+                      Semester X
                     </button>
                   </h5>
                 </div>
+
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="card-body table-responsive-lg">
+                    <table class="table table-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">Kode</th>
+                          <th scope="col">Mata Kuliah</th>
+                          <th scope="col">Nama Dosen</th>
+                          <th scope="col">Kelas</th>
+                          <th scope="col">W/P</th>
+                          <th scope="col">SKS</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                          <td>xxx</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
 
-            </div>
+              <div class="card" id="bawahInfo">
+                <div class="card-body">
+                  <h5 class="card-title">Keterangan</h5>
+                  <p class="card-subtitle mb-2 text-muted">Informasi Matakuliah Ditawarkan berisi seluruh matakuliah yang ditawarkan pada semester aktif. Dari seluruh matakuliah yang terdapat pada daftar, setiap matakuliah mempunyai aturan tersendiri bergantung pada program studi, kurikulum, dan aturan akademik lainnya.</p>
+                </div>
+              </div>
 
-<!-- halaman Mata Kuliah -->
-            <div class="card tab-pane fade" id="lurr" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+          </div>
+
+<!-- halaman Kartu Rencana Studi -->
+          <div id="halamanRencanaStudi" class="tab-pane fade">
+
+            <h4 class="text-center">Kartu Rencana Studi</h4>
+
+            <div class="card" id="krs">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-header text-center">Bukan Priode KRS</h5>
+                <table class="table table-striped table-sm">
+                  <tbody>
+                    <tr>
+                      <td>Nim</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Nama</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Program Studi</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Semester</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Maksimum SKS</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Dosen Pembimbing Akademik</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="card-header text-center text-danger">Anda belum mengisi KRS</h6>
               </div>
             </div>
+
+          </div>
+
+<!-- Halaman Kartu Hasil Studi -->
+          <div id="halamanHasilStudi" class="tab-pane fade">
+
+            <h4 class="text-center">Kartu Hasil Studi</h4>
+
+            <div class="card" id="HsProfil">
+              <table class="table table-striped table-sm table-responsive-lg">
+                  <tbody>
+                    <tr>
+                      <td>Nama</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Nim</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Program Studi</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                    <tr>
+                      <td>Semester</td>
+                      <td>:</td>
+                      <td>xxxxxxx</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div id="HsPilihan">
+              <select class="form-control-sm" id="exampleFormControlSelect1">
+                <option>Semester x / x</option>
+                <option>Semester x / x</option>
+                <option>Semester x / x</option>
+              </select>
+              <label for="contoh"><button type="button" class="btn btn-primary">Lihat</button></label>
+            </div>
+
+            <div class="card" id="krs">
+              <div class="card-body table-responsive-sm">
+                  <table class="table table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode</th>
+                        <th scope="col">Mata Kuliah</th>
+                        <th scope="col">Nama Dosen</th>
+                        <th scope="col">Kelas</th>
+                        <th scope="col">W/P</th>
+                        <th scope="col">SKS</th>
+                        <th scope="col">Nilai</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                        <td>xxx</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+          <div class="card-header bg-light text-black">
+            <p>Jumlah SKS diambil : X</p>
+            <p>Jumlah mata kuliah diambil : X</p>
+            <p>IP Semester : X</p>
+          </div>
 
         </div>
     </div>

@@ -45,75 +45,6 @@ form .img {
 	margin-top: 15px;
 }
 
-/* halaman index */
-.navbar-brand span.sub {
-	font-size: 15px;
-	font-weight: lighter;
-}
-
-/*.card {
-	margin-top: 30px;
-}*/
-
-#body-row {
-    margin-left:0;
-    margin-right:0;
-}
-#sidebar-container {
-    min-height: 110vh;
-    background-color: #333;
-    padding: 0;
-}
-
-
-.sidebar-expanded {
-    width: 230px;
-}
-/*.sidebar-collapsed {
-    width: 60px;
-}*/
-
-
-#sidebar-container .list-group a {
-    height: 50px;
-    color: white;
-}
-
-
-#sidebar-container .list-group .sidebar-submenu a {
-    height: 45px;
-    padding-left: 30px;
-}
-.sidebar-submenu {
-    font-size: 0.9rem;
-}
-
-/*.sidebar-separator-title {
-    background-color: #333;
-    height: 35px;
-}
-.sidebar-separator {
-    background-color: #333;
-    height: 25px;
-}
-.logo-separator {
-    background-color: #333;
-    height: 60px;
-}*/
-
-footer nav {
-	padding: 10px;
-}
-
-#halamanInformasi,#profil,#home {
-	margin-top: 30px;
-}
-
-/* Halaman Informasi mata kuliah yang ditawarkan */
-.pilihan label button {
-	padding: 2px 9px;
-	margin-bottom: 11px;
-}
 
 /* agar web responsive */
 /* Halaman Login */
@@ -467,4 +398,114 @@ footer nav {
 		margin-top: 15px;
 	}
 
+}
+
+/* halaman index */
+.navbar-brand span.sub {
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.navbar {
+	width: 100%;
+}
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+
+#sidebar-container {
+	/*min-height: 110vh;*/
+    min-height: 100%;
+    background-color: #333;
+    padding: 0;
+}
+
+.sidebar-expanded {
+    width: 230px;
+}
+
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+footer nav {
+	padding: 10px;
+}
+
+#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi {
+	margin-top: 30px;
+}
+
+/* Halaman Profil */
+#profil {
+	margin-bottom: 10px;
+}
+
+/* Halaman Informasi mata kuliah yang ditawarkan */
+#halamanInformasi h4 {
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#bawahInfo {
+	font-weight: lighter;
+}
+
+.pilihan label button {
+	padding: 2px 9px;
+	margin-bottom: 11px;
+}
+
+#bawahInfo {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+	#halamanInformasi .card {
+		width: 130%;
+	}
+
+	#halamanInformasi .card #collapseOne {
+		padding: 10px;
+	}
+}
+
+/* Halaman Rencana Studi */
+#halamanHasilStudi {
+	margin-bottom: 30px;
+}
+
+#halamanRencanaStudi h4 {
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px;
+}
+
+/* Halaman Kartu Hasil Studi */
+#halamanHasilStudi #HsProfil {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#halamanHasilStudi h4 {
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#halamanHasilStudi .card-header {
+	font-weight: lighter;
 }
