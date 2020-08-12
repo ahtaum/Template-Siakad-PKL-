@@ -444,7 +444,7 @@ footer nav {
 	padding: 10px;
 }
 
-#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi {
+#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop {
 	margin-top: 30px;
 }
 
@@ -508,4 +508,41 @@ footer nav {
 
 #halamanHasilStudi .card-header {
 	font-weight: lighter;
+}
+
+/* Halaman Transkip Nilai */
+#ketTranskipNilaidetail {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#ketTranskipNilai {
+	padding: 30px;
+}
+
+#halamanTranskipNilai h4 {
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px;
+}
+
+/* Halaman Presensi */
+#halamanPresensi h4 {
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#halamanPresensi #tablePresensi {
+	margin-bottom: 20px;
+}
+
+/* Halaman Workshop */
+#HalamanWorkshop h4 {
+	font-weight: lighter;
+	padding: 10px;
+}
+
+#HalamanWorkshop #ketworkshop {
+	padding: 10px;
 }
