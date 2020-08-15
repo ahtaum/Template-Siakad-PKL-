@@ -124,7 +124,7 @@ form .img {
 
 }
 
-#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+/*#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
   content: " \f0d7";
   font-family: FontAwesome;
   display: inline;
@@ -138,7 +138,7 @@ form .img {
   display: inline;
   text-align: right;
   padding-left: 10px;
-}
+}*/
 
 @media only screen and (max-width: 704px) {
 
@@ -400,7 +400,7 @@ form .img {
 
 }
 
-/* halaman index */
+/* halaman Utama */
 .navbar-brand span.sub {
 	font-size: 15px;
 	font-weight: lighter;
@@ -416,8 +416,8 @@ form .img {
 }
 
 #sidebar-container {
-	/*min-height: 110vh;*/
-    min-height: 100%;
+	min-height: 133vh;
+    /*min-height: 100%;*/
     background-color: #333;
     padding: 0;
 }
@@ -444,7 +444,11 @@ footer nav {
 	padding: 10px;
 }
 
-#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop {
+/*#halamanUtama .card {
+
+}*/
+
+#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop,#halamanMateriKuliah,#halamanTugasKuliah,#halamanAgendaKelas,#halamanAgendaPribadi,#halamanFileSharing,#halamanReferensi {
 	margin-top: 30px;
 }
 
@@ -545,4 +549,101 @@ footer nav {
 
 #HalamanWorkshop #ketworkshop {
 	padding: 10px;
+}
+
+/* Halaman Materi Kuliah */
+#halamanMateriKuliah #HsPilihanMateriKuliah #labelpilihan {
+	padding-right: 30px;
+}
+
+#halamanMateriKuliah #HsPilihanMateriKuliah .btn {
+	margin-bottom: 7px;
+	padding: 5px 5px;
+}
+
+#halamanMateriKuliah #HsPilihanMateriKuliah #labelpilihankelas {
+	padding-right: 110px;
+}
+
+#halamanMateriKuliah #HsPilihanMateriKuliah #cariJudul {
+	margin-top: 15px;
+}
+
+#halamanMateriKuliah #HsPilihanMateriKuliah #cariJudul label {
+	margin-right: 115px;
+}
+
+#halamanMateriKuliah h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
+}
+
+/* Halaman Tugas Kuliah */
+#halamanTugasKuliah h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
+}
+
+/* Halaman Agenda Kelas */
+#halamanAgendaKelas {
+	padding: 10px;
+}
+
+#halamanAgendaKelas #HsPilihanAgendaKelas #labelpilihan {
+	padding-right: 40px;
+}
+
+#halamanAgendaKelas #HsPilihanAgendaKelas #labelpilihanFrekuensi {
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+#halamanAgendaKelas h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
+}
+
+/* Halaman Agenda Pribadi */
+#halamanAgendaPribadi h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
+}
+
+/* Halaman Sharing File */
+#halamanFileSharing {
+	margin-bottom: 20px;
+	transform: translateX(5%);
+}
+
+#halamanFileSharing h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
+}
+
+#halamanFileSharing h5 {
+	font-weight: lighter;
+	padding: 10px;
+}
+
+#halamanFileSharing #kartuUpload {
+	padding-top: 10px;
+}
+
+#halamanFileSharing #kartuUpload #upload label {
+	padding-right: 10px;
+}
+#halamanFileSharing #kartuUpload #upload .form-control-file {
+	padding-bottom: 10px;
+}
+
+/* Halaman Referensi */
+#halamanReferensi h4 {
+	font-weight: lighter;
+	padding: 10px;
+	color: white;
 }
