@@ -444,12 +444,8 @@ footer nav {
 	padding: 10px;
 }
 
-/*#halamanUtama .card {
-
-}*/
-
-#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop,#halamanMateriKuliah,#halamanTugasKuliah,#halamanAgendaKelas,#halamanAgendaPribadi,#halamanFileSharing,#halamanReferensi {
-	margin-top: 30px;
+#bawahUtama {
+	margin-top: 10px;
 }
 
 /* Halaman Profil */
@@ -477,7 +473,7 @@ footer nav {
 	margin-top: 10px;
 }
 
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
 	#halamanInformasi .card {
 		width: 130%;
 	}
@@ -486,6 +482,7 @@ footer nav {
 		padding: 10px;
 	}
 }
+*/
 
 /* Halaman Rencana Studi */
 #halamanHasilStudi {
@@ -646,4 +643,71 @@ footer nav {
 	font-weight: lighter;
 	padding: 10px;
 	color: white;
+}
+
+/* Footer */
+/*#bawah nav {
+
+}*/
+
+/* yang lain */
+#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop,#halamanMateriKuliah,#halamanTugasKuliah,#halamanAgendaKelas,#halamanAgendaPribadi,#halamanFileSharing,#halamanReferensi {
+	margin-top: 30px;
+}
+
+/* Responsive web */
+
+/* Standar Responsive klo hp dibalik */
+@media only screen and (max-width: 812px) {
+
+	/* Halaman jika dibalik hpnya */
+	#home {
+		transform: translateX(10%) translateY(-5%);
+	}
+
+	#profil {
+		transform: translateX(17%);
+	}
+
+	#halamanInformasi {
+		transform: translateX(17%) translateY(-5%);
+	}
+
+}
+
+/* Standar Responsive */
+@media only screen and (max-width: 450px) {
+
+/* Halaman Home */
+	#home  {
+		transform: translateX(10%) translateY(-3%);
+	}
+
+/* Halaman Profil */
+	#profil {
+		transform: translateX(5%);
+		width: 120%;
+	}
+
+/* Halaman Informasi Mata Kuliah */
+	#halamanInformasi {
+		transform: translateX(15%);
+	}
+
+}
+
+/* spesifik responsive */
+@media only screen and (max-width: 320px) {
+	#halamanInformasi {
+		transform: translateX(10%);
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	#halamanInformasi {
+		transform: translateX(5%) translateY(-5%);
+	}
+	#halamanInformasi .pilihan .form-control-sm {
+		width: 130%;
+	}
 }
