@@ -161,10 +161,10 @@
 <!-- akhir Sidebar -->
 
 <!-- Halaman Utama -->
-  <div class="col-9">
+  <div class="col-9" id="semue">
       <div class="tab-content" id="halamanUtama">
 
-            <div class="card tab-pane fade show active w-70" role="tabpanel" id="home" align="justify" style="width: 110%;">
+            <div class="card tab-pane fade show active w-70" role="tabpanel" id="home" align="justify">
               <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
               <div class="card-body">
                 <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
@@ -181,7 +181,7 @@
             </div>
 
             <div class="card-body">
-                <table class="table table-striped table-sm">
+                <table class="table table-striped table-responsive-sm">
                   <tbody>
                     <tr>
                       <td>Nim</td>
@@ -247,13 +247,12 @@
                 </table>
 
             </div>
-            <div class="card-footer text-muted">Profil Mahasiswa berisi data pribadi pengguna portal akademik. Apabila terdapat kesalahan data, anda dapat menghubungi bagian akademik untuk memperbaikinya.</div>
             </div>
 
 <!-- Halaman Informasi mata kuliah yang ditawarkan -->
           <div id="halamanInformasi" class="tab-pane fade container">
 
-            <h4 class="text-center">Informasi Mata Kuliah</h4>
+            <h4 class="text-center">Informasi Mata Kuliah yang Ditawarkan</h4>
 
               <div class="pilihan">
                 <select class="form-control-sm" id="exampleFormControlSelect1">
@@ -439,12 +438,12 @@
                 </div>
               </div>
 
-              <div class="card" id="bawahInfo">
+<!--               <div class="card" id="bawahInfo">
                 <div class="card-body">
                   <h5 class="card-title">Keterangan</h5>
                   <p class="card-subtitle mb-2 text-muted">Informasi Matakuliah Ditawarkan berisi seluruh matakuliah yang ditawarkan pada semester aktif. Dari seluruh matakuliah yang terdapat pada daftar, setiap matakuliah mempunyai aturan tersendiri bergantung pada program studi, kurikulum, dan aturan akademik lainnya.</p>
                 </div>
-              </div>
+              </div> -->
 
           </div>
 
@@ -456,7 +455,7 @@
             <div class="card" id="krs">
               <div class="card-body">
                 <h5 class="card-header text-center">Bukan Priode KRS</h5>
-                <table class="table table-striped table-sm">
+                <table class="table table-striped table-responsive-sm">
                   <tbody>
                     <tr>
                       <td>Nim</td>
@@ -501,8 +500,8 @@
 
             <h4 class="text-center">Kartu Hasil Studi</h4>
 
-            <div class="card" id="HsProfil">
-              <table class="table table-striped table-sm table-responsive-lg">
+            <div class="card table-responsive-lg" id="HsProfil">
+              <table class="table table-striped">
                   <tbody>
                     <tr>
                       <td>Nama</td>
@@ -609,8 +608,8 @@
 
             <h4 class="text-center">Transkip Nilai</h4>
 
-            <div class="card" id="HsProfil">
-              <table class="table table-striped table-sm table-responsive-xl">
+            <div class="card table-responsive-lg" id="HsProfil">
+              <table class="table table-striped">
                   <tbody>
                     <tr>
                       <td>Nama</td>
@@ -696,7 +695,7 @@
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                   <button class="btn btn-link" data-toggle="collapse" data-target="#ketTranskipNilai" aria-expanded="true" aria-controls="collapseOne">
-                    Semester X
+                    Detail
                   </button>
                 </h5>
               </div>
@@ -721,8 +720,8 @@
               <label for="contoh"><button type="button" class="btn btn-primary">Lihat</button></label>
             </div>
 
-            <div class="card" id="HsProfil">
-              <table class="table table-striped table-sm table-responsive-xl">
+            <div class="card table-responsive-xl" id="HsProfil">
+              <table class="table table-striped">
                   <tbody>
                     <tr>
                       <td>Nama</td>
@@ -749,7 +748,7 @@
             </div>
 
             <div class="card" id="tablePresensi">
-              <div class="card-body table-responsive-sm">
+              <div class="table-responsive-sm">
                   <table class="table table-sm">
                     <thead>
                       <tr>
@@ -1016,8 +1015,8 @@
               <input class="btn btn-primary" type="submit" value="Tampilkan">
             </div>
           </div>
-          <div class="card" id="tabelHasil">
-            <table class="table table-striped table-responsive-sm">
+          <div class="card table-responsive-sm" id="tabelHasil">
+            <table class="table table-striped">
             <thead>
               <tr>
                 <th scope="col">No</th>
@@ -1186,7 +1185,7 @@
 </div>
 
 <!-- footer -->
-<!-- <footer class="bawah">
+<!-- <footer id="bawah">
     <nav class="fixed-bottom navbar-light bg-light text-center">
       <a class="" href="#">Disclamer</a>
       <a class="" href="#">Faq</a>
@@ -1197,7 +1196,23 @@
 <!-- Boostrap javasript -->
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
 
+// buat hp iphone klo hpnya dibalik layarnya sebesar 812px
+  function cocokGk(cocoklah) {
+    if (cocoklah.matches) {
+      $('#semue').addClass('col-7');
+      $('#semue').removeClass('col-9');
+    } else {
+      console.log('h3h3h3h3');
+    }
+  }
+
+  const cocoklah = window.matchMedia("(width: 812px)");
+  cocokGk(cocoklah);
+  cocoklah.addListener(cocokGk);
+
+</script>
 
 </body>
 </html>

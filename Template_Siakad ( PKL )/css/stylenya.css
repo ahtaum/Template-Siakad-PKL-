@@ -656,6 +656,7 @@ footer nav {
 }
 
 /* Responsive web */
+/* nomor ukuran PX( pixel ) pada media only screen harus urut dari terbesar sampai terkecil */
 
 /* Standar Responsive klo hp dibalik */
 @media only screen and (max-width: 812px) {
@@ -673,6 +674,56 @@ footer nav {
 		transform: translateX(17%) translateY(-5%);
 	}
 
+	#halamanRencanaStudi {
+		transform: translateX(17%) translateY(-5%);
+	}
+
+	#halamanHasilStudi {
+		transform: translateX(17%) translateY(1%);
+	}
+
+	#halamanTranskipNilai {
+		transform: translateX(17%) translateY(1%);
+	}
+
+	#halamanPresensi {
+		transform: translateX(17%);
+	}
+	#HalamanWorkshop {
+		transform: translateX(15%) translateY(-5%);
+	}
+
+	#halamanMateriKuliah {
+		transform: translate(17%) translateY(-5%);
+	}
+
+	#halamanTugasKuliah {
+		transform: translateX(17%) translateY(-3%);
+	}
+
+	#halamanAgendaKelas {
+		transform: translateX(17%);
+	}
+
+	#halamanAgendaPribadi {
+		transform: translateX(17%) translateY(-3%);
+	}
+
+	#halamanFileSharing {
+		transform: translateX(17%);
+	}
+
+	#halamanReferensi {
+		transform: translateX(17%) translateY(-3%);
+	}
+
+}
+
+/* spesifik responsive */
+@media only screen and (width: 600px) {
+	#halamanPresensi .card, #halamanTugasKuliah {
+		width: 110%;
+	}
 }
 
 /* Standar Responsive */
@@ -680,7 +731,7 @@ footer nav {
 
 /* Halaman Home */
 	#home  {
-		transform: translateX(10%) translateY(-3%);
+		transform: translateX(15%) translateY(-3%);
 	}
 
 /* Halaman Profil */
@@ -694,12 +745,94 @@ footer nav {
 		transform: translateX(15%);
 	}
 
+/* Halaman Kartu Rencana Studi */
+	#halamanRencanaStudi {
+		transform: translateX(15%);
+	}
+
+/* Halaman Hasil Studi */
+	#halamanHasilStudi {
+		transform: translateX(15%);
+	}
+
+/* Halaman Transkip Nilai */
+	#halamanTranskipNilai {
+		transform: translateX(15%);
+	}
+
+/* Halaman Presensi */
+	#halamanPresensi {
+		transform: translateX(15%);
+	}
+
+/* Halaman Workshop */
+	#HalamanWorkshop {
+		transform: translateX(15%);
+	}
+
+/* Halaman Materi Kuliah */
+	#halamanMateriKuliah {
+		transform: translateX(15%);
+	}
+
+/* Halaman Tugas Kuliah */
+	#halamanTugasKuliah {
+		transform: translateX(15%) translateY(-3%);
+	}
+
+/* Halaman Agenda Kelas */
+	#halamanAgendaKelas {
+		transform: translateX(15%);
+	}
+
+/* Halaman Agenda Pribadi */
+	#halamanAgendaPribadi {
+		transform: translateX(15%);
+	}
+
+/* Halaman File Sharing */
+	#halamanFileSharing {
+		transform: translateX(15%);
+	}
+
+/* Halaman Referensi */
+	#halamanReferensi {
+		transform: translateX(15%);
+	}
+
 }
 
 /* spesifik responsive */
+@media only screen and (max-width: 450px) {
+	#halamanRencanaStudi {
+		transform:translateX(15%) translateY(-3%);
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	#halamanRencanaStudi {
+		transform:translateX(15%) translateY(-3%);
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	#halamanRencanaStudi {
+		transform:translateX(15%) translateY(-3%);
+	}
+}
+
 @media only screen and (max-width: 320px) {
 	#halamanInformasi {
 		transform: translateX(10%);
+	}
+	#halamanRencanaStudi {
+		transform: translateX(15%) translateY(-3%);
+	}
+	#halamanAgendaPribadi {
+		transform: translateX(15%) translateY(-3%);
+	}
+	#halamanReferensi {
+		transform: translateX(15%) translateY(-3%);
 	}
 }
 
@@ -709,5 +842,11 @@ footer nav {
 	}
 	#halamanInformasi .pilihan .form-control-sm {
 		width: 130%;
+	}
+	#halamanMateriKuliah #cariJudul input {
+		width: 90%;
+	}
+	#halamanFileSharing input {
+		width: 90%;
 	}
 }
