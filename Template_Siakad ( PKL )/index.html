@@ -57,6 +57,12 @@
             <a class="dropdown-item" href="#halamanReferensi" data-toggle="pill">Referensi</a>
         </div>
       </li>
+      <li class="nav-item dropdown d-sm-block d-md-none" role="tablist">
+        <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lainya</a>
+        <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+          <a class="dropdown-item" href="#UbahPassword" data-toggle="pill">Ubah Password</a>
+        </div>
+      </li>
 
     </ul>
   </div>
@@ -81,14 +87,6 @@
                 </div>
             </a>
 
-            <!-- <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start nav-item dropdown">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-dashboard fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Academics</span>
-                </div>
-            </a>
-
-            <div id='submenu1' class="collapse sidebar-submenu" data-toggle="pill"> -->
                 <a href="#halamanInformasi" data-toggle="pill" class="list-group-item list-group-item-action bg-dark text-white nav-link">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Info MataKuliah</span>
@@ -113,16 +111,7 @@
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Workshop</span>
                 </a>
-            <!-- </div>
- -->
-            <!-- <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-user fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Virtual Class</span>
-                </div>
-            </a> -->
 
-            <!-- <div id='submenu2' class="collapse sidebar-submenu"> -->
                 <a href="#halamanMateriKuliah" data-toggle="pill" class="list-group-item list-group-item-action bg-dark text-white nav-link">
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Materi Kuliah</span>
@@ -147,7 +136,13 @@
                     <span class="fa fa-dashboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Referensi</span>
                 </a>
-            <!-- </div> -->
+
+            <a href="#UbahPassword" data-toggle="pill" aria-expanded="false" class="list-group-item list-group-item-action bg-dark text-white nav-link">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-dashboard fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Ubah Password</span>
+                </div>
+            </a>
 
             <a href="#sub" data-toggle="collapse" aria-expanded="false" class="text-light bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
@@ -168,6 +163,8 @@
               <h5 class="card-header" align="center">Selamat Datang xxxx</h5>
               <div class="card-body">
                 <p class="card-text">Selamat Datang di Portal Akademik. Portal Akademik adalah sistem yang memungkinkan para civitas akademika STMIK AKAKOM untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini diharapkan dapat memberi kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar. Selamat menggunakan fasilitas ini.</p>
+                <label class="blockquote"><strong>Disclamer</strong></label>
+                <p class="card-text">Aplikasi Portal Akademik ini berfungsi sebagai alat bantu penyedia/penyaji informasi berupa interface publik yang menjembatani publik dengan aplikasi Sistem Informasi Akademik di seluruh program studi. Semua informasi akademik di portal akademik diperoleh secara langsung dari fakultas, melalui infrastruktur jaringan intranet kampus. Data yang terlihat di Portal Akademik sama dengan yang ada di fakultas, oleh karena itu data di Portal Akademik sangat bergantung pada validitas data di fakultas. Secara formal, data yang valid adalah data yang telah diotorisasi oleh dekan fakultas maupun BAA .</p>
                 <center><a href="#" class="card-link">Panduan</a></center>
               </div>
             </div>
@@ -177,7 +174,6 @@
 
             <div class="card-header">
                 <h5>Profil Mahasiswa</h1>
-                <!-- <h6 class="card-subtitle mb-2 text-muted"></h6> -->
             </div>
 
             <div class="card-body">
@@ -437,14 +433,6 @@
                   </div>
                 </div>
               </div>
-
-<!--               <div class="card" id="bawahInfo">
-                <div class="card-body">
-                  <h5 class="card-title">Keterangan</h5>
-                  <p class="card-subtitle mb-2 text-muted">Informasi Matakuliah Ditawarkan berisi seluruh matakuliah yang ditawarkan pada semester aktif. Dari seluruh matakuliah yang terdapat pada daftar, setiap matakuliah mempunyai aturan tersendiri bergantung pada program studi, kurikulum, dan aturan akademik lainnya.</p>
-                </div>
-              </div> -->
-
           </div>
 
 <!-- halaman Kartu Rencana Studi -->
@@ -1181,17 +1169,26 @@
   </div>
 </div>
 
+<!-- Halaman Ubah Password -->
+      <div id="UbahPassword" class="tab-pane fade">
+        <form>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="text-center">Ubah Password</h4>
+              <label for="PasswordLama">Password Lama</label>
+              <input type="password" class="form-control" id="passwordyanglama" aria-describedby="emailHelp" placeholder="Masukan Password lama">
+              <label for="Passwordbaru">Password Baru</label>
+              <input type="password" class="form-control" id="passwordyangbaru" aria-describedby="emailHelp" placeholder="Masukan Password baru">
+              <label for="PasswordbaruTulisUlang">Tulis Ulang Password Baru</label>
+              <input type="password" class="form-control" id="tulisulangpasswordbaru" placeholder="Tulis ulang Password baru">
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
   </div>
 </div>
-
-<!-- footer -->
-<!-- <footer id="bawah">
-    <nav class="fixed-bottom navbar-light bg-light text-center">
-      <a class="" href="#">Disclamer</a>
-      <a class="" href="#">Faq</a>
-      <a class="" href="#">Ubah Password</a>
-    </nav>
-</footer> -->
 
 <!-- Boostrap javasript -->
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

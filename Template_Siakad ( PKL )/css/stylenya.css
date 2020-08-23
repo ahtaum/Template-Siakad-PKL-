@@ -124,22 +124,6 @@ form .img {
 
 }
 
-/*#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
-  content: " \f0d7";
-  font-family: FontAwesome;
-  display: inline;
-  text-align: right;
-  padding-left: 10px;
-}
-
-#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
-  content: " \f0da";
-  font-family: FontAwesome;
-  display: inline;
-  text-align: right;
-  padding-left: 10px;
-}*/
-
 @media only screen and (max-width: 704px) {
 
 	form .img {
@@ -417,9 +401,9 @@ form .img {
 
 #sidebar-container {
 	min-height: 133vh;
-    /*min-height: 100%;*/
     background-color: #333;
     padding: 0;
+    font-weight: lighter;
 }
 
 .sidebar-expanded {
@@ -472,17 +456,6 @@ footer nav {
 #bawahInfo {
 	margin-top: 10px;
 }
-
-/*@media only screen and (max-width: 1024px) {
-	#halamanInformasi .card {
-		width: 130%;
-	}
-
-	#halamanInformasi .card #collapseOne {
-		padding: 10px;
-	}
-}
-*/
 
 /* Halaman Rencana Studi */
 #halamanHasilStudi {
@@ -645,13 +618,19 @@ footer nav {
 	color: white;
 }
 
-/* Footer */
-/*#bawah nav {
+/* Halaman Ubah Password */
+#UbahPassword .card {
+	padding: 20px;
+	font-weight: lighter;
+}
 
-}*/
+#UbahPassword h4 {
+	font-weight: lighter;
+	padding: 10px;
+}
 
 /* yang lain */
-#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop,#halamanMateriKuliah,#halamanTugasKuliah,#halamanAgendaKelas,#halamanAgendaPribadi,#halamanFileSharing,#halamanReferensi {
+#halamanInformasi,#profil,#home,#halamanMataKuliah,#halamanRencanaStudi,#halamanHasilStudi,#halamanTranskipNilai,#halamanPresensi,#HalamanWorkshop,#halamanMateriKuliah,#halamanTugasKuliah,#halamanAgendaKelas,#halamanAgendaPribadi,#halamanFileSharing,#halamanReferensi,#UbahPassword {
 	margin-top: 30px;
 }
 
@@ -663,7 +642,7 @@ footer nav {
 
 	/* Halaman jika dibalik hpnya */
 	#home {
-		transform: translateX(10%) translateY(-5%);
+		transform: translateX(18%) translateY(-2%);
 	}
 
 	#profil {
@@ -717,6 +696,10 @@ footer nav {
 		transform: translateX(17%) translateY(-3%);
 	}
 
+	#UbahPassword {
+		transform: translateX(17%) translateY(-3%);
+	}
+
 }
 
 /* spesifik responsive */
@@ -731,7 +714,8 @@ footer nav {
 
 /* Halaman Home */
 	#home  {
-		transform: translateX(15%) translateY(-3%);
+		transform: translateX(3%) translateY(-1%);
+		width: 130%;
 	}
 
 /* Halaman Profil */
@@ -747,7 +731,7 @@ footer nav {
 
 /* Halaman Kartu Rencana Studi */
 	#halamanRencanaStudi {
-		transform: translateX(15%);
+		transform: translateX(35%);
 	}
 
 /* Halaman Hasil Studi */
@@ -800,6 +784,12 @@ footer nav {
 		transform: translateX(15%);
 	}
 
+/* Halaman Ubah Password */
+	#UbahPassword {
+		transform: translateX(7%);
+		width: 120%;
+	}
+
 }
 
 /* spesifik responsive */
@@ -848,5 +838,9 @@ footer nav {
 	}
 	#halamanFileSharing input {
 		width: 90%;
+	}
+	#UbahPassword {
+		transform: translateX(1%);
+		width: 130%;
 	}
 }
