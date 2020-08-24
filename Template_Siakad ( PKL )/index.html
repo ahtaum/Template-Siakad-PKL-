@@ -1195,19 +1195,28 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script>
 
-// buat hp iphone klo hpnya dibalik layarnya sebesar 812px
   function cocokGk(cocoklah) {
     if (cocoklah.matches) {
       $('#semue').addClass('col-7');
       $('#semue').removeClass('col-9');
-    } else {
-      console.log('h3h3h3h3');
     }
   }
 
-  const cocoklah = window.matchMedia("(width: 812px)");
-  cocokGk(cocoklah);
-  cocoklah.addListener(cocokGk);
+  function cocokGkDua(cocokdua) {
+    if (cocokdua.matches) {
+      $('#semue').addClass('col-8');
+      $('#semue').removeClass('col-9');
+    }
+  }
+
+  const cocok = window.matchMedia("(width: 812px)");
+  const cocokdua = window.matchMedia("(width: 823px)");
+
+  cocokGkDua(cocokdua);
+  cocokGk(cocok);
+
+  const fungsi = cocok.addListener(cocokGk);
+  const fungsidua = cocokdua.addListener(cocokGkDua);
 
 </script>
 
